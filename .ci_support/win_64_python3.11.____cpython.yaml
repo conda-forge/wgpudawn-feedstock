@@ -9,7 +9,7 @@ channel_targets:
 cxx_compiler:
 - vs2022
 dawn:
-- '20261023.194543'
+- '20261030'
 is_abi3:
 - true
 pin_run_as_build:

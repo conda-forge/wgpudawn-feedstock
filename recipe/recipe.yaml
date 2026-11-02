@@ -12,7 +12,7 @@ source:
   sha256: 285801512c52220c224e07a2a07452632aa9ed0c503c9f6b2078bb4ba3f9509c
 
 build:
-  number: 0
+  number: 1
   # The cffi extension uses the limited API, so one build per platform covers
   # all supported Python versions.
   skip: not (match(python, python_min ~ ".*") and is_abi3)
@@ -47,9 +47,6 @@ requirements:
   run:
     - python
     - cffi >=1.17
-    # The extension uses Dawn's C++ API (dawn::native), which is not ABI
-    # stable, and Dawn has no run_exports; require the exact Dawn release.
-    - ${{ pin_compatible('dawn', upper_bound='x.x') }}
     - if: osx
       then:
         - rubicon-objc >=0.4.1
