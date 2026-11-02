@@ -17,7 +17,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '21'
 dawn:
-- '20261023.194543'
+- '20261030'
 is_abi3:
 - true
 macos_machine:
