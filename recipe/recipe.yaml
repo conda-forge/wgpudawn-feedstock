@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.32.0.4"
+  version: "0.33.0.0"
 
 package:
   name: wgpudawn
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/w/wgpudawn/wgpudawn-${{ version }}.tar.gz
-  sha256: 285801512c52220c224e07a2a07452632aa9ed0c503c9f6b2078bb4ba3f9509c
+  sha256: 2cbc7c89e0b0e42b4df38ae7705a7e119d8cd885cec9dd8ca919fa257e4d6adb
 
 build:
-  number: 1
+  number: 0
   # The cffi extension uses the limited API, so one build per platform covers
   # all supported Python versions.
   skip: not (match(python, python_min ~ ".*") and is_abi3)
