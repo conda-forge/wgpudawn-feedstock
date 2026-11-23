@@ -13,7 +13,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '2022'
 dawn:
-- '20261106.204713'
+- '20261120.121236'
 is_abi3:
 - true
 pin_run_as_build:
